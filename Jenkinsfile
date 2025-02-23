@@ -3,8 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "haridtvt/pratices:latest"
-        BUILD_TAG = "${BUILD_NUMBER}"
-        REPO_URL = "https://github.com/haridtvt/Pratices:${BUILD_NUMBER}"
+        REPO_URL = "https://github.com/haridtvt/Pratices"
     }
 
     stages {
