@@ -33,7 +33,7 @@ pipeline {
             steps {
                 sh 'docker stop nginx-container || true'
                 sh 'docker rm nginx-container || true'
-                sh 'docker run -d --name nginx-container -p 8080:80 $DOCKER_IMAGE'
+                sh 'docker run -d --name nginx-container -p 6080:80 $DOCKER_IMAGE'
             }
         }
     }
