@@ -25,7 +25,6 @@ pipeline {
         stage('Push to Docker Hub') {
             steps {
                 script {
-                    sh 'docker login -u haridtvt -p 123456789'
                     sh 'docker push $DOCKER_IMAGE'
                 }
             }
